@@ -23,11 +23,11 @@
     }
     heading {
     font-family: 'Helvetica', Lato, Verdana, sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     }
     papertitle {
     font-family: 'Helvetica', Lato, Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700
     }
     name {
@@ -57,6 +57,7 @@
     span.highlight {
         background-color: #ffffd0;
     }
+	
   </style>
 	
     <link href='http://fonts.googleapis.com/css?family=Helvetica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -67,7 +68,7 @@
     <link href="/img/css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <table width="1000" border="0" align="center" cellspacing="0" cellpadding="0">
+    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
       <tbody><tr>
         <td>
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -107,13 +108,42 @@
            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tbody><tr>
               <td>
-                <heading>Preprints</heading>
+                <heading><i>Preprints</i></heading>
                 <p>
-				<a href="https://n1thinv.github.io/">
-                <papertitle>Linear bandits under Safety Constraints</papertitle></a>
-               <br><strong>K Nithin Varma</strong>, Sahin Lale, and Anima Anandkumar<br>
-               <a href="https://n1thinv.github.io/">Preprint</a>
+				<papertitle>Implicit Regularization of Mirror Descent</papertitle>
+               <br><strong>K Nithin Varma</strong>, Sahin Lale, and Babak Hassibi<br>
+			   <i>In prepartion to be submitted  </i>
+               <a href="https://n1thinv.github.io/">(Preprint)</a>
 			   </p>
+			   <p>
+In this work, we look at the implicit regularisation properties for Stochastic Mirror Descent (SMD) under different potentials in overparameterised linear models. 
+Using CGMT we transform the primary optimisation (PO) to a dual form which is easier to analyse. 
+I have charactersed the distribution of the global optima of the model that interpolates the data under common potentials like 1-norm;, 2-norm and infinity-norm , 
+which matches emperical results obtained using SMD on PO.
+                </p>
+			   <p>
+               <papertitle>Linear Bandits under Safety Constraints</papertitle>
+               <br><strong>K Nithin Varma</strong>, Sahin Lale, and Anima Anandkumar<br>
+               <i>In prepartion to be submitted  </i>
+               <a href="https://n1thinv.github.io/">(Preprint)</a>
+			   </p>
+			   <p>
+In this work we show sublinear regret bounds for stochastic linear bandits under safety constraints. Previous results show sublinear regret for only linear safety constraints or if the constraint belongs to an RKHS family. 
+This work extends the results to much more general nonlinear functions with weaker assumptions. 
+The main idea we exploit is that learning the constraint function is only crucial near the boundary of the constraint.
+                </p>
+			   <p>
+			   
+               <papertitle>An Erasure Queue-Channel with Feedback: Optimal Transmission Control to Maximize Capacity</papertitle>
+               <br><strong>K Nithin Varma</strong> and Krishna Jagannathan<br>
+			   <strong><i>Submitted to Information Theory Workshop (ITW) 2023 </i></strong>
+               <a href="./files/ITW_2023.pdf">(Preprint)</a>
+			   </p>
+			   <p>
+The Erasure Queue Channel model is motivated from the Quantum Queue Channel, where the erasure probability of bits is waiting time dependent. 
+In this work we characterised the optimal transmission policy that maximises capcity and proved that the single threshold bang bang policy is optimal.
+ The paper is under review for ITW 2023.
+                </p>
 			   
 	     </td>
             </tr>
@@ -133,25 +163,32 @@
             <tbody><tr>
 
 	              </td><td width="75%" valign="top">
-	                <p><a href="#">
-	<a href="https://n1thinv.github.io/"><papertitle>Stochastic Mirror descent</papertitle></a>
-                        <br><strong>K Nithin Varma /</strong>
-                        <strong>EE5121 Final Project</strong><br>
+	                <p><papertitle>Stochastic Mirror descent</papertitle>
+                        <br>K Nithin Varma / EE5121 Final Project<br>
                         <a href="./files/SMD_slides_ver6.pdf">Slides</a>
 				                </p><p></p>
 				<p>
+				In this project I looked into work on Stochastic Mirror Descent on Overparameterized Nonlinear Models and analysed the results.
+				Implemented Stochastic Mirror Descent, and demonstrated implicit regularization properties on Neural Networks. 
+				Using limited training data by choosing appropriate Bregman divergence loss functions, showed that overparametrized models can generalize better.
                 </p><p></p>
                 </p><p></p>
                 <p></p>
               </td></tr>
 			
+			
+			
+			
  	              </td><td width="75%" valign="top">
-	                <p><a href="#">
-	<a href="https://n1thinv.github.io/"><papertitle>Information theoretic Generalization Bounds</papertitle></a>
-                        <br><strong>K Nithin Varma//</strong>
-                        <strong>EE6143 course Project</strong><br>
-                        <a href="./files/EE6143_slides.pdf">Slides</a>
+	                <p><papertitle>Information theoretic Generalization Bounds</papertitle>
+                        <br>K Nithin Varma/EE6143 course Project<br>
+                        <a href="./files/EE6143_slides.pdf">Slides</a> 
                 </p><p></p>
+				<p>
+This work looks into literature, which talks about modeling learning algorithms as stochastic channels taking training data as input and giving weight parameters at the output.
+ This perspective helps provide information-theoretic bounds for generalization and stability
+, and I improved upon existing generalization bounds in the literature using f-divergence measures.
+                </p>
 				<p>
                 </p><p></p>
                 <p></p>
